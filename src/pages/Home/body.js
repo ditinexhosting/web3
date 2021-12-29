@@ -3,7 +3,15 @@ import React from 'react';
 const Body = ()=>{
     return(
         <div className='body-container'>
-            <div className='item-container'>
+            <ItemContainer />
+            <ItemContainer />
+        </div>
+    )
+}
+
+const ItemContainer = ()=>{
+    return(
+        <div className='item-container'>
                 <div className='d-flex flex-fill align-items-center'>
                     <img src={require('../../assets/images/icon.png')} className='icon' />
                     <div className='ms-3'>
@@ -25,7 +33,6 @@ const Body = ()=>{
                     <div className='button-fill ms-4'>Apply</div>
                 </div>
             </div>
-        </div>
     )
 }
 
