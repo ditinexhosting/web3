@@ -3,7 +3,7 @@ import React from 'react';
 const Header = ()=>{
     return(
         <div className='header-container'>
-            <div className='sitename text-center mt-10'>Web3 Jobs</div>
+            <div className='sitename text-center'>Web3 Jobs</div>
             <div className='header-wrapper-bg'></div>
             <div className='header-wrapper pt-5'>
                 <div className='title'>comprehensive job board for</div>
