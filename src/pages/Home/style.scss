@@ -7,39 +7,39 @@
         background-image: url('../../assets/images/bg.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: 100% 100%;;
-        min-height: 70vh;
-        position: relative;
+        background-size: 100% 100%;
         .sitename{
             font-family: $Podkova;
             color: $primary;
             font-size: 36px;
-            padding-top: 25px;
-        }
-        .header-wrapper-bg{
-            background: rgba(47, 193, 53, 0.75);
-            opacity: 0.5;
-            filter: blur(201px);
-            height: 50vh;
-            width: 50vw;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-60%);
+            padding-top: 40px;
         }
         .header-wrapper{
-            width: 100%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-68%);
+            margin: auto;
+            width: 1100px;
+            min-height: 391px;
+            margin-top: 120px;
+            margin-bottom: 120px;
+            position: relative;
+            .header-wrapper-bg{
+                background: rgba(47, 193, 53, 0.75);
+                opacity: 0.5;
+                filter: blur(201px);
+                margin: auto;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 0;
+            }
         }
         .title{
             text-align: center;
             font-style: normal;
             font-weight: bold;
-            font-size: 50px;
-            line-height: 65px;
+            font-size: 60px;
+            line-height: 75px;
             text-transform: uppercase;
             color: #F2FFF2;
             font-family: $SpaceMono;
@@ -53,8 +53,8 @@
             text-transform: capitalize;
             text-align: center;
             color: #F2FFF2;
-            margin-top: 10px;
-            margin-bottom: 40px;
+            margin-top: 20px;
+            margin-bottom: 80px;
         }
         .button-outline{
             display: flex;
@@ -96,10 +96,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: absolute;
-            bottom: 10%;
-            left: 50%;
-            transform: translateX(-50%);
+            margin: auto;
+            margin-bottom: 120px;
             .tag-item{
                 display: flex;
                 text-transform: capitalize;
