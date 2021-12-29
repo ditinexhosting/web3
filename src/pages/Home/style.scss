@@ -8,7 +8,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;;
-        min-height: 80vh;
+        min-height: 70vh;
         position: relative;
         .sitename{
             font-family: $Podkova;
@@ -32,7 +32,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
-            transform: translate(-50%,-60%);
+            transform: translate(-50%,-65%);
         }
         .title{
             text-align: center;
@@ -54,7 +54,7 @@
             text-align: center;
             color: #F2FFF2;
             margin-top: 10px;
-            margin-bottom: 60px;
+            margin-bottom: 40px;
         }
         .button-outline{
             display: flex;
@@ -114,14 +114,14 @@
     }
     .body-container{
         margin: auto;
-        margin-top: 50px;
+        margin-top: 40px;
         padding-bottom: 50px;
         max-width: 1200px;
         .item-container{
             display: flex;
             align-items: center;
             flex-direction: row;
-            margin-bottom: 10px;
+            margin-bottom: 30px;
             .icon{
                 width: 60px;
                 height: 60px;
