@@ -1,0 +1,23 @@
+
+/* Add all variables to overwrite default */
+
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+/* Custom Colors */
+$background: #000;
+$primary: #2FC135;
+
+/* Custom Fonts */
+
+@import url(https://fonts.googleapis.com/css2?family=Podkova:wght@600&display=swap|Open+Sans:400italic,700italic,400,700);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono);
+
+$Podkova: 'Podkova', serif; 
+$SpaceMono: 'Space Mono', serif;
+
+
+/* Global CSS */
+
