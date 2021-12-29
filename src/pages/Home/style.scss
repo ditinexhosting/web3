@@ -56,41 +56,6 @@
             margin-top: 20px;
             margin-bottom: 80px;
         }
-        .button-outline{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 18px;
-            width: 230px;
-            height: 72px;
-            border: 1.64583px solid #2FC135;
-            box-sizing: border-box;
-            filter: drop-shadow(0px 2.99993px 85.498px #A50655);
-            cursor: pointer;
-            font-family: $SpaceMono;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            color: #C8FFCA;
-        }
-        .button-fill{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            padding: 18px;
-            width: 230px;
-            height: 72px;
-            background: #2FC135;
-            box-shadow: 0px 2.99993px 85.498px #2FC135;
-            cursor: pointer;
-            font-family: $SpaceMono;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
-            color: #C8FFCA;
-        }
         .tag-container{
             max-width: 1100px;
             display: flex;
@@ -112,9 +77,9 @@
     }
     .body-container{
         margin: auto;
-        margin-top: 40px;
-        padding-bottom: 50px;
-        max-width: 1200px;
+        margin-top: 20px;
+        padding-bottom: 120px;
+        max-width: 1300px;
         .item-container{
             display: flex;
             align-items: center;
@@ -174,5 +139,93 @@
                 cursor: pointer;
             }
         }
+    }
+    .footer-container{
+        width: 1300px;
+        min-height: 610px;
+        background: linear-gradient(180deg, #2FC135 0%, rgba(47, 193, 53, 0) 100%);
+        margin: auto;
+        margin-bottom: 135px;
+        padding-top: 80px;
+        .client-feedback-title{
+            font-family: $SpaceMono;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 64px;
+            font-feature-settings: 'salt' on, 'liga' off;
+            color: #FFFFFF;
+        }
+        .quote{
+            width: 176px;
+            height: 149px;
+            position: absolute;
+            opacity: 0.6;
+            top: -25px;
+            right: 50px;
+        }
+        .testimonial-container{
+            margin-top: 32px;
+            margin-bottom: 70px;
+            .testimonials{
+                width: 540px;
+                height: 304px;
+            }
+        }
+    }
+    .copyright-seperator{
+        opacity: 0.34;
+        border: 1px solid #C4C4C4;
+        width: 100%;
+    }
+    .copyright{
+        font-family: $SpaceMono;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: capitalize;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        color: #A7A299;
+    }
+
+    .button-outline{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+        width: 230px;
+        height: 72px;
+        border: 1.64583px solid #2FC135;
+        box-sizing: border-box;
+        filter: drop-shadow(0px 2.99993px 85.498px #A50655);
+        cursor: pointer;
+        font-family: $SpaceMono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #C8FFCA;
+    }
+    .button-fill{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+        width: 230px;
+        height: 72px;
+        background: #2FC135;
+        box-shadow: 0px 2.99993px 85.498px #2FC135;
+        cursor: pointer;
+        font-family: $SpaceMono;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: #C8FFCA;
     }
 }

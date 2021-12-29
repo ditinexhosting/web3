@@ -2,11 +2,32 @@ import React from 'react';
 
 const Body = ({data})=>{
     return(
-        <div className='body-container'>
-            {
-                data.map((item,index)=><ItemContainer key={index} item={item} />)
-            }
-        </div>
+        <React.Fragment>
+            <div className='body-container'>
+                {
+                    data.map((item,index)=><ItemContainer key={index} item={item} />)
+                }
+            </div>
+            <div className='footer-container'>
+                <div className='d-flex flex-row'>
+                    <div className='d-flex flex-sm-fill justify-content-center align-items-center'>
+                        <div className='client-feedback-title'>Our client speaks</div>
+                    </div>
+                    <div className='d-flex flex-sm-fill justify-content-center position-relative'>
+                        <img src={require('../../assets/images/quote.png')} alt="quote" className='quote' />
+                    </div>
+                </div>
+                <div className='d-flex justify-content-center align-items-center testimonial-container'>
+                    <img src={require('../../assets/images/testimonials.png')} alt="testimonials" className='testimonials' />
+                </div>
+                <div className='d-flex flex-row justify-content-center'>
+                    <div className='button-outline me-3'>Join Discord</div>
+                    <div className='button-fill ms-3'>Post a Job</div>
+                </div>
+            </div>
+            <div className='copyright-seperator'></div>
+            <div className='copyright'>©2022 DAOvelopers</div>
+        </React.Fragment>
     )
 }
 
