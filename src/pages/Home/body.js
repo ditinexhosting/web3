@@ -13,7 +13,7 @@ const ItemContainer = ()=>{
     return(
         <div className='item-container'>
                 <div className='d-flex flex-fill align-items-center'>
-                    <img src={require('../../assets/images/icon.png')} className='icon' />
+                    <img src={require('../../assets/images/icon.png')} alt="icon" className='icon' />
                     <div className='ms-3'>
                         <div className='item-title'>Front-End Developer</div>
                         <div className='item-subtitle'>Parcel</div>
