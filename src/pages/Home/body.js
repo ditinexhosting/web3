@@ -1,22 +1,24 @@
 import React from 'react';
 
-const Body = ()=>{
+const Body = ({data})=>{
     return(
         <div className='body-container'>
-            <ItemContainer />
-            <ItemContainer />
+            {
+                data.map((item,index)=><ItemContainer key={index} item={item} />)
+            }
         </div>
     )
 }
 
-const ItemContainer = ()=>{
+const ItemContainer = ({item})=>{
+    const itemData = JSON.parse(item[0])
     return(
         <div className='item-container'>
                 <div className='d-flex flex-fill align-items-center'>
                     <img src={require('../../assets/images/icon.png')} alt="icon" className='icon' />
                     <div className='ms-3'>
-                        <div className='item-title'>Front-End Developer</div>
-                        <div className='item-subtitle'>Parcel</div>
+                        <div className='item-title'>{itemData.title}</div>
+                        <div className='item-subtitle'>{itemData.company}</div>
                     </div>
                 </div>
                 <div className='d-flex flex-sm-fill justify-content-center align-items-center'>

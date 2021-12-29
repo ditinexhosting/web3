@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from './header';
 import Body from './body';
 import { homeApi } from 'apis'
@@ -6,17 +6,24 @@ import './style.scss';
 
 const Main = ()=>{
 
+    const [data, setData] = useState([])
+
     useEffect(()=>{
         homeApi()
-        .then(data=>{
-            console.log('DATA >>>> ',data)
+        .then(response => {
+            if(response.success){
+                setData(response.data)
+            }
+            else{
+                alert(response.message)
+            }
         })
     },[])
 
     return(
         <div id="Home">
             <Header />
-            <Body />
+            <Body data={data} />
         </div>
     )
 }
